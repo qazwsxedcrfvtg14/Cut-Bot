@@ -12,7 +12,7 @@ namespace Cut
     {
         static public async Task SaveTextAsync(string filename, string text)
         {
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath +"db\\"+ filename, FileMode.Create))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Create))
             {
                 UnicodeEncoding uniencoding = new UnicodeEncoding();
                 byte[] result = uniencoding.GetBytes(text);
@@ -22,7 +22,7 @@ namespace Cut
 
         static public async Task AppendTextAsync(string filename, string text)
         {
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "db\\" + filename, FileMode.Append))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Append))
             {
                 UnicodeEncoding uniencoding = new UnicodeEncoding();
                 byte[] result = uniencoding.GetBytes(text);
@@ -33,7 +33,7 @@ namespace Cut
         static public async Task<string> LoadTextAsync(string filename)
         {
             byte[] result;
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "db\\" + filename, FileMode.Open))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Open))
             {
                 result = new byte[SourceStream.Length];
                 await SourceStream.ReadAsync(result, 0, (int)SourceStream.Length);
@@ -44,7 +44,7 @@ namespace Cut
 
         static public  void SaveText(string filename, string text)
         {
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "db\\" + filename, FileMode.Create))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Create))
             {
                 UnicodeEncoding uniencoding = new UnicodeEncoding();
                 byte[] result = uniencoding.GetBytes(text);
@@ -54,7 +54,7 @@ namespace Cut
 
         static public void AppendText(string filename, string text)
         {
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "db\\" + filename, FileMode.Append))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Append))
             {
                 UnicodeEncoding uniencoding = new UnicodeEncoding();
                 byte[] result = uniencoding.GetBytes(text);
@@ -65,7 +65,7 @@ namespace Cut
         static public string LoadText(string filename)
         {
             byte[] result;
-            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "db\\" + filename, FileMode.Open))
+            using (FileStream SourceStream = File.Open(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename, FileMode.Open))
             {
                 result = new byte[SourceStream.Length];
                 SourceStream.Read(result, 0, (int)SourceStream.Length);
@@ -75,7 +75,7 @@ namespace Cut
         }
         static public bool FileExists(string filename)
         {
-            return File.Exists(HttpRuntime.AppDomainAppPath + "db\\" + filename);
+            return File.Exists(HttpRuntime.AppDomainAppPath + "bin\\db\\" + filename);
         }
         
     }

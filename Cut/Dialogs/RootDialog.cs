@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Web;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
@@ -92,9 +93,12 @@ namespace Cut.Dialogs
             string res = "";
             foreach(var x in Voc.Show2(activity.Text))
             {
-                res += x+" ";
+                //res += x+" ";
+                await context.PostAsync(x);
             }
-            await context.PostAsync($"You sent {activity.Text} which is {res} !");
+            //await context.PostAsync($"You sent {activity.Text} which is {res} !");
+            //await context.PostAsync(HttpRuntime.AppDomainAppPath + "db\\");
+            
             //await context.PostAsync($"You sent {activity.Text} which is {activity.Text} ");
 
             context.Wait(MessageReceivedAsync);

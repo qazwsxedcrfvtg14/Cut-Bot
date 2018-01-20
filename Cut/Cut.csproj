@@ -116,30 +116,30 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="db\data\note.txt">
+    <EmbeddedResource Include="db\data\note.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\prefix.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\prefix.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\root.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\root.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\STCharacters.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\STCharacters.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\STPhrases.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\STPhrases.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\suffix.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\suffix.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\tmp.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\tmp.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="db\data\words.txt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\data\words.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
     <Content Include="default.htm" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
