@@ -63,8 +63,7 @@ namespace Cut
         {
             using (var lk = rwl.ReaderLock())
             {
-                bool res = data.exists(key);
-                return res;
+                return data.exists(key);
             }
         }
         public bool exists_ok(string key)
@@ -76,8 +75,7 @@ namespace Cut
         }
         private bool exists_ok_nolock(string key)
         {
-            bool res = ok.exists(key);
-            return res;
+            return ok.exists(key);
         }
         public string val(string key)
         {

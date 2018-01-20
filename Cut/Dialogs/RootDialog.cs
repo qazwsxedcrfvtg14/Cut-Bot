@@ -90,7 +90,7 @@ namespace Cut.Dialogs
 
             // return our reply to the user
             //Voc.Show2(activity.Text);
-            string res = "";
+            //string res = "";
             foreach(var x in Voc.Show2(activity.Text))
             {
                 //res += x+" ";
