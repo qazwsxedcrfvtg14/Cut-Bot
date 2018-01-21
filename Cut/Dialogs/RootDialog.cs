@@ -91,16 +91,16 @@ namespace Cut.Dialogs
             //Voc.Show2(activity.Text);
             //string res = "";
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            sb.AppendLine($"## {activity.Text}");
+            sb.AppendLine($"{activity.Text}");
             sb.AppendLine(new string('-', 20));
             foreach(var x in Voc.Show(activity.Text))
             {
                 //res += x+" ";
-                sb.AppendLine($"**{x.Item2}**");
+                sb.AppendLine($"{x.Item2}");
                 sb.AppendLine($"    {x.Item1}");
                 //await context.PostAsync(x);
             }
-            var s = sb.ToString().Replace("\n", "<br/>").Replace("(",System.Web.HttpUtility.HtmlEncode("("))/*.Replace(")","\\)").Replace("[","\\[").Replace("]","\\]")*/;
+            var s = sb.ToString().Replace("\n", "<br/>")/*.Replace("(",System.Web.HttpUtility.HtmlEncode("("))*//*.Replace(")","\\)").Replace("[","\\[").Replace("]","\\]")*/;
             //s = System.Web.HttpUtility.UrlEncode(s);
             System.Diagnostics.Trace.WriteLine(s);
             await context.PostAsync(s);
