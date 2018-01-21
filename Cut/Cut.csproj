@@ -189,28 +189,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="db\data\note.txt">
+    <EmbeddedResource Include="data\note.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\prefix.txt">
+    <EmbeddedResource Include="data\prefix.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\root.txt">
+    <EmbeddedResource Include="data\root.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\STCharacters.txt">
+    <EmbeddedResource Include="data\STCharacters.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\STPhrases.txt">
+    <EmbeddedResource Include="data\STPhrases.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\suffix.txt">
+    <EmbeddedResource Include="data\suffix.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\tmp.txt">
+    <EmbeddedResource Include="data\tmp.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="db\data\words.txt">
+    <EmbeddedResource Include="data\words.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="default.htm" />

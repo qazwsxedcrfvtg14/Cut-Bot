@@ -10,24 +10,26 @@ using System.Net;
 using System.Diagnostics;
 using System.Threading;
 using Nito.AsyncEx;
+using System.Web;
+
 namespace Cut
 {
     public static class Voc
     {
         public static Maps 
-            words = new Maps(), 
-            root = new Maps(), 
-            prefix = new Maps(), 
-            suffix = new Maps(),
-            note = new Maps(),
-            setting = new Maps(), 
-            favorite = new Maps();
+            words = null, 
+            root = null, 
+            prefix = null, 
+            suffix = null,
+            note = null,
+            setting = null, 
+            favorite = null;
         public static AsyncReaderWriterLock inited_rwl = new AsyncReaderWriterLock();
         public static bool inited=false;
         //public static SortedDictionary<string, SortedSet<string>> rtp=null;
         public static void DumpAppFile(string fil)
         {
-            string s= SaveAndLoad.LoadText("data\\"+fil);
+            string s= SaveAndLoad.LoadText("..\\bin\\data\\"+fil);
             SaveAndLoad.SaveText(fil, s);
         }
         public static void SavingSetting()

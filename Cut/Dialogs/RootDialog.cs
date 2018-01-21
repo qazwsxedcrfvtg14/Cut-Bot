@@ -81,7 +81,6 @@ namespace Cut.Dialogs
                     Init();
                     Voc.inited = true;
                 }
-
             }
             var activity = await result as Activity;
 
