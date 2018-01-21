@@ -14,7 +14,7 @@ using System.Web;
 
 namespace Cut
 {
-    public static class Voc
+    public static partial class Voc
     {
         public static Maps 
             words = null, 

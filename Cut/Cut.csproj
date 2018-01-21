@@ -228,6 +228,7 @@
     <Compile Include="Dialogs\SaveAndLoad.cs" />
     <Compile Include="Dialogs\Treap.cs" />
     <Compile Include="Dialogs\Trie.cs" />
+    <Compile Include="Dialogs\Voc_Extension.cs" />
     <Compile Include="Dialogs\Voc.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
